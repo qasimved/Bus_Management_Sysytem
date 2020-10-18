@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snowWhite"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Frontend.AddFeedBack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/snowWhite"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Select Route"
+            android:textColor="@color/customized_red" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@color/snowWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Feed Back"
+            android:textColor="@color/customized_red" />
+
+        <EditText
+            android:id="@+id/feedBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:shadowColor="@color/customized_red"
+            android:textColor="@color/customized_red"
+            android:textColorHighlight="@color/customized_red"
+            android:textColorHint="@color/customized_red"
+            android:textColorLink="@color/customized_red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:background="@color/snowWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/seendFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:fb_borderColor="@color/cardview_shadow_end_color"
+                fancy:fb_borderWidth="4dp"
+                fancy:fb_defaultColor="@color/customized_red"
+                fancy:fb_focusColor="@color/focus_color"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Send FeedBack"
+                fancy:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

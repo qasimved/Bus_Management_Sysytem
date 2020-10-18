@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snowWhite"
+    android:gravity="top">
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Account Setting"
+            android:textColor="@color/customized_red"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/edit_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:fb_borderColor="@color/cardview_shadow_end_color"
+                fancy:fb_borderWidth="4dp"
+                fancy:fb_defaultColor="@color/customized_red"
+                fancy:fb_focusColor="@color/focus_color"
+                fancy:fb_iconResource="@drawable/ic_edit_black_24dp"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Edit Mobile No"
+                fancy:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:paddingRight="60dp">
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                fancy:fb_borderColor="@color/cardview_shadow_end_color"
+                fancy:fb_borderWidth="4dp"
+                fancy:fb_defaultColor="@color/customized_red"
+                fancy:fb_focusColor="@color/focus_color"
+                fancy:fb_iconResource="@drawable/ic_edit_black_24dp"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Change Password"
+                fancy:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
